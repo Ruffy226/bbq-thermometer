@@ -20,6 +20,8 @@ esp32:
   variant: esp32c6
   framework:
     type: esp-idf
+  # NOTE: esp-idf framework required for I2C/display to work correctly on ESP32-C6
+  # Arduino framework had issues with SH1106 OLED display
 
 logger:
 
